@@ -1,0 +1,115 @@
+.hero {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+}
+
+.hero__content {
+    margin: 5rem 0rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__animation {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.hero__animation video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.hero__content .hero__content--textbox h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.hero__content .hero__content--textbox h1 span {
+    background: var(--main-color);
+    color: transparent;
+    background-clip: text;
+    background-size: 800% 800%;
+    animation: text-gradient 6s ease infinite;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.hero__content--textbox {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(11.6px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 30px;
+    border-radius: 16px;
+    padding: 5rem;
+    max-width: 550px;
+}
+
+.hero__content--textbox {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.hero__content--textbox-line {
+    background-color: #fff;
+    height: 1px;
+    width: 75%;
+    margin: 0.5rem 0;
+}
+
+#hero__content--textbox-typed-text {
+    font-style: italic;
+}
+
+.hero__content--textbox--btn-box {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.hero__content--textbox--btn-box a {
+    text-decoration: none;
+    background-color: #0B0015;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 1rem 3rem;
+    transition: 0.8s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__content--textbox--btn-box a:hover {
+    background-color: #120122;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 2);
+}
+
+@media (max-width: 550px) {
+    .hero__content {
+        transform: scale(0.67);
+        margin: 0rem;
+    }
+}

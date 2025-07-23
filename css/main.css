@@ -1,0 +1,68 @@
+:root {
+    --header-gradient: linear-gradient(-45deg, #000000, #06000c);
+    --main-gradient: linear-gradient(45deg, #000000, #0a0015, #06000b);
+    --main-color: linear-gradient(45deg, #e7c2ff, #ca7bff, #b13cff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'QuickSand';
+    font-weight: 400;
+    color: #fff;
+}
+
+body {
+    background: var(--main-gradient);
+    background-size: 1300% 1300%;
+    animation: background-gradient-animation 12s ease-in-out infinite;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b13cff;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6c00b5;
+}
+
+@keyframes text-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes background-gradient-animation {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}

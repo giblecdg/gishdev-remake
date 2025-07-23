@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/about_terminal_type.js" defer></script>
+    <script src="js/about_projects_swiper.js" defer></script>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <title>GishDev</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="Logo">
+            <h2>GishDev</h2>
+        </a>
+        <nav>
+            <ul>
+                <a href="">
+                    <i class="fa-solid fa-house"></i>
+                    <li>Strona Główna</li>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <li>O nas</li>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <li>Usługi</li>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-envelope"></i>
+                    <li>Kontakt</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <div class="hero__content--textbox">
+                    <h1>Gish<span>Dev</span></h1>
+                    <p id="hero__content--textbox-typed-text">Web Development</p>
+                    <div class="hero__content--textbox-line"></div>
+                    <p>Twój biznes w sieci zaczyna się od nas – profesjonalny web design, który przyciąga i sprzedaje!
+                    </p>
+                    <div class="hero__content--textbox--btn-box">
+                        <a href="" class="hero__content--textbox-btn">Projekty</a>
+                        <a href="" class="hero__content--textbox-btn">O nas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__animation">
+                <video autoplay muted loop playslinline>
+                    <source src="images/hero_animation.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__terminal">
+                <div class="about__terminal--box">
+                    <div class="about__terminal--box-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="about__terminal--box-top-title">
+                            admin@gishdev: ~
+                        </div>
+                    </div>
+                    <div class="about__terminal--box-content" id="about__terminal--box-content">
+
+                    </div>
+                </div>
+            </div>
+            <div class="about__selected-projects">
+                <div class="about__selected-projects--box">
+                    <h2>Nasze projekty</h2>
+                    <div class="about__selected-projects--box-line"></div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/clothing_website.png" alt="project_image"></div>
+                            <div class="swiper-slide"><img src="images/carshare_website.png" alt="project_image"></div>
+                            <div class="swiper-slide"><img src="images/dentist_website.png" alt="project_image"></div>
+                            <div class="swiper-slide"><img src="images/barber_website.png" alt="project_image"></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <a href="https://useme.com/pl/roles/contractor/gishdev,461974" target="_blank"
+                        class="about__selected-projects--box-btn">Zobacz więcej</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>GishDev</h2>
+        <p>© 2025 GishDev. Wszelkie prawa zastrzeżone.</p>
+        <div class="footer__buttons">
+            <a href="https://www.facebook.com/GishDevelopment" class="footer__buttons--btn" target="_blank">Facebook</a>
+            <a href="" class="footer__buttons--btn">Polityka prywatności</a>
+            <a href="" class="footer__buttons--btn">RODO</a>
+        </div>
+    </footer>
+</body>
+
+</html>

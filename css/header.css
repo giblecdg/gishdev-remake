@@ -1,0 +1,56 @@
+header a {
+    text-decoration: none;
+}
+
+header {
+    background: var(--header-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-size: 300% 300%;
+}
+
+header a img {
+    max-width: 50px;
+}
+
+header nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+}
+
+header nav ul a {
+    display: flex;
+    gap: 0.5rem;
+}
+
+header nav ul a li {
+    transition: color 0.3s ease;
+}
+
+header nav ul a li:hover {
+    color: rgb(210, 210, 210);
+}
+
+header a h2 {
+    font-family: 'Source Code Pro';
+    font-weight: 700;
+    font-size: 2.2rem
+}
+
+header a {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}

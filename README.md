@@ -1,1 +1,1 @@
-# gishdev-remake
+remake for gishdev.pl
