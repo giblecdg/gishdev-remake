@@ -1,56 +1,128 @@
-header a {
-    text-decoration: none;
-}
-
 header {
     background: var(--header-gradient);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 3rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     background-size: 300% 300%;
+    position: relative;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
 }
 
 header a img {
     max-width: 50px;
+    margin-right: 0.5rem;
 }
 
-header nav ul {
-    text-decoration: none;
-    list-style-type: none;
+header a h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+header>a {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
     gap: 1.5rem;
     font-size: 1.2rem;
 }
 
-header nav ul a {
+nav ul li a {
     display: flex;
     gap: 0.5rem;
-}
-
-header nav ul a li {
+    align-items: center;
     transition: color 0.3s ease;
 }
 
-header nav ul a li:hover {
+nav ul li a:hover {
     color: rgb(210, 210, 210);
 }
 
-header a h2 {
-    font-family: 'Source Code Pro';
-    font-weight: 700;
-    font-size: 2.2rem
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
 }
 
-header a {
-    display: flex;
-    align-items: center;
+.hamburger span {
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.hamburger span {
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 @media (max-width: 768px) {
     nav {
-        display: none;
+        padding: 0;
+        max-height: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--header-gradient);
+        background-size: 300% 300%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+        transition: max-height 0.4s ease, padding 0.4s ease;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    nav.active {
+        padding: 1rem 0;
+        max-height: 250px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
     }
 }

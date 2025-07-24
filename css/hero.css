@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: animate_hero_textbox 1.4s forwards;
 }
 
 .hero__animation {
@@ -107,9 +108,49 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 2);
 }
 
+#hero__content--textbox-typed-text-cursor {
+    font-style: normal;
+    font-weight: 400;
+    animation: blink 1s steps(1) infinite;
+    color: #fff;
+}
+
+.hero__content--textbox-text {
+    display: flex;
+    gap: 0.3rem;
+}
+
 @media (max-width: 550px) {
     .hero__content {
-        transform: scale(0.67);
-        margin: 0rem;
+        max-width: 100%;
+    }
+
+    .hero__content--textbox {
+        font-size: 0.7rem;
+        padding: 5rem 5%;
+    }
+
+    .hero__content .hero__content--textbox h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero__content .hero__content--textbox h1 span {
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero__animation {
+        display: none;
+    }
+
+    .hero__content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero__content {
+        transform: scale(0.9)
     }
 }

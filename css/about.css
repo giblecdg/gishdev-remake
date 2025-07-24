@@ -3,10 +3,12 @@
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5rem 0rem;
 }
 
 .about__terminal {
     color: #cdd9e5;
+    animation: animate_about_section 1.1s forwards ease;
 }
 
 .about__terminal--box {
@@ -14,8 +16,6 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
     padding: 1rem;
     min-width: 35rem;
     min-height: 30rem;
@@ -56,6 +56,13 @@
 .about__terminal--box-content {
     font-family: 'Ubuntu Mono';
     margin-left: 0;
+}
+
+.about__selected-projects {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: animate_about_section 1.2s forwards ease;
+    animation-delay: 300ms;
 }
 
 .about__selected-projects--box {
@@ -112,21 +119,13 @@
     border-radius: 1rem;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    color: #fff;
-    background-color: #ca7bff;
-    padding: 2.3rem;
-    border-radius: 1rem;
-    opacity: 50%;
-    transform: scale(0.8);
-    text-align: center;
-    transition: 0.3s ease;
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-    transform: scale(0.85);
+.swiper-pagination-bullet-active {
+    background: #b13cff;
 }
 
 .swiper-slide img {
@@ -139,13 +138,13 @@
 @media (max-width: 1350px) {
     .about {
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        padding: 5rem 0rem;
+        gap: 5rem;
     }
 
     .about__selected-projects {
-        margin-bottom: 5rem;
-        width: 100%;
         min-width: 500px;
     }
 
@@ -156,47 +155,33 @@
     .about__terminal--box {
         width: 100%;
         min-width: 400px;
-        min-height: 550px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .hero__animation {
-        display: none;
-    }
-
-    .hero__content {
-        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
-    .about__selected-projects {
-        transform: scale(0.9);
-    }
-
     .about {
-        gap: 0rem;
-        justify-content: center;
+        gap: 3rem;
     }
 
+
     .about__selected-projects {
-        margin-bottom: 0rem;
+        width: 100%;
+        min-width: 0px;
     }
 }
 
 @media (max-width: 550px) {
-    .about__terminal--box-content {
-        font-size: 0.7rem;
+    .about__terminal {
+        margin: 0rem 1rem;
+        font-size: 0.8rem;
+        width: 100%;
     }
 
     .about__terminal--box {
-        min-height: 300px;
         min-width: 0px;
     }
 
     .about__selected-projects {
-        margin-bottom: 5rem;
         width: 100%;
         min-width: 0px;
     }

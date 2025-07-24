@@ -20,8 +20,12 @@ body {
     height: 100vh;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
-    width: 2px;
+    width: 4px;
     height: 0px;
 }
 
@@ -31,12 +35,27 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #b13cff;
+    background: #7728ac;
     border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #6c00b5;
+}
+
+#arrow_up {
+    background: #7728ac;
+    padding: 7px 10px;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 40px;
+    right: -90px;
+    border-radius: 10px;
+    z-index: 1000;
+    opacity: 50%;
+    display: none;
+    cursor: pointer;
+    transition: right 1s ease;
 }
 
 @keyframes text-gradient {
@@ -64,5 +83,44 @@ body {
 
     100% {
         background-position: 0 50%;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate_hero_textbox {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+@keyframes animate_about_section {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
