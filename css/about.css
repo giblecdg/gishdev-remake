@@ -122,6 +122,7 @@
 .swiper-pagination-bullet {
     width: 16px;
     height: 16px;
+    opacity: 0.5;
 }
 
 .swiper-pagination-bullet-active {
@@ -174,7 +175,7 @@
     .about__terminal {
         margin: 0rem 1rem;
         font-size: 0.8rem;
-        width: 100%;
+        min-width: 300px;
     }
 
     .about__terminal--box {
@@ -184,5 +185,9 @@
     .about__selected-projects {
         width: 100%;
         min-width: 0px;
+    }
+
+    .about__selected-projects--box {
+        padding: 2rem 0.5rem;
     }
 }

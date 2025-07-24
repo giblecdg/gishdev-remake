@@ -126,7 +126,6 @@
     }
 
     .hero__content--textbox {
-        font-size: 0.7rem;
         padding: 5rem 5%;
     }
 
@@ -137,6 +136,10 @@
     .hero__content .hero__content--textbox h1 span {
         font-size: 3.4rem;
     }
+
+    .hero__content--textbox--btn-box a {
+        padding: 1rem 1.5rem;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -146,11 +149,5 @@
 
     .hero__content {
         width: 100%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .hero__content {
-        transform: scale(0.9)
     }
 }

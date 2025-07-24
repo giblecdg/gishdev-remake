@@ -37,3 +37,9 @@ footer p {
     display: flex;
     gap: 1rem;
 }
+
+@media (max-width: 350px) {
+    .footer__buttons {
+        gap: 0.3rem;
+    }
+}
