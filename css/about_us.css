@@ -12,15 +12,10 @@
     animation-delay: 100ms;
 }
 
-/* .item--container h3 {
+.item--container h3 {
     font-size: 1.2rem;
     font-weight: 800;
-    animation: fade_in_about_us_textbox 1s ease forwards;
 }
-
-.item--container p {
-    animation: fade_in_about_us_textbox 1s ease forwards;
-} */
 
 .item--container {
     padding: 1.5rem;

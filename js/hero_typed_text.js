@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "hero__content--textbox-typed-text"
   );
   const text = "Web Development";
-  const typingSpeed = 100;
+  const typingSpeed = 150;
   let index = 0;
 
   function type() {
