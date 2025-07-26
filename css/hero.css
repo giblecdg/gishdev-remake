@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     animation: animate_hero_textbox 1.4s forwards;
+    animation-delay: 300ms;
     opacity: 0;
 }
 

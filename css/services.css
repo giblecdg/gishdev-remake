@@ -1,0 +1,210 @@
+.services__prices--header h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.services__prices--header-line {
+    height: 3px;
+    background: var(--main-color2);
+    background-size: 800% 800%;
+    animation: text-gradient 1s infinite;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    animation: animate_services_header_line 3s forwards;
+}
+
+.services__prices--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fade_in_about_us_textbox 1s forwards;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__prices--price-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.services__price--price-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(11.6px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 30px;
+    border-radius: 16px;
+    padding: 2rem;
+    position: relative;
+    transition: transform 1s ease;
+    animation: fade_in_about_us_textbox 1s forwards;
+    animation-delay: 500ms;
+    opacity: 0;
+}
+
+.services__price--price-list-item:nth-child(2) {
+    animation-delay: 700ms;
+}
+
+.services__price--price-list-item:nth-child(3) {
+    animation-delay: 900ms;
+}
+
+.services__price--price-list-item:hover {
+    transform: translateY(-5px);
+}
+
+.services__price--price-list-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: var(--main-color);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    animation: text-gradient 5s infinite;
+    background-size: 800% 800%;
+}
+
+
+.services__price--price-list-item h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.services__price--price-list-item h3 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.services__price--price-list-item h3 span {
+    font-size: 2.8rem;
+    color: transparent;
+    background: var(--main-color);
+    background-clip: text;
+    background-size: 800% 800%;
+    animation: text-gradient 6s ease infinite;
+    font-weight: 600;
+}
+
+.services__price--price-list-item h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0rem 0.5rem 0rem;
+    font-weight: 500;
+}
+
+.services__price--price-list-item-benefits-line {
+    height: 1px;
+    background-color: #909090;
+    width: 100%;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+}
+
+.services__prices--price-list {
+    margin-top: 3rem;
+}
+
+.services__price--price-list-item a {
+    text-decoration: none;
+    margin-top: 3rem;
+    background: var(--main-color2);
+    width: 100%;
+    padding: 1rem 0rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.services__price--price-list-item a:hover {
+    transform: scale(1.01);
+    background: #c670ff;
+}
+
+.services__container {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.services__info-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    animation: fade_in_service_info_box2 1s forwards;
+    animation-delay: 1200ms;
+}
+
+.services__info-box:nth-child(2) {
+    animation: fade_in_service_info_box 1s forwards;
+    animation-delay: 1500ms;
+}
+
+.services__info-box h2 {
+    color: transparent;
+    background: var(--main-color);
+    background-clip: text;
+    background-size: 800% 800%;
+    animation: text-gradient 6s ease infinite;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.services__info-box p {
+    font-size: 1.1rem;
+}
+
+.services__info-box p span {
+    font-weight: 600;
+}
+
+.services__info-box-line {
+    height: 1px;
+    background-color: #909090;
+    margin: 0.3rem 0;
+}
+
+.services__info {
+    display: flex;
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .services__prices--price-list {
+        flex-direction: column;
+    }
+
+    .services__info {
+        flex-direction: column;
+    }
+
+    .services__website_info--box {
+        flex-direction: column;
+    }
+}

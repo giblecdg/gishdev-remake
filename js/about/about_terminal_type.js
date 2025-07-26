@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         terminalContent.innerHTML +=
           content[localIndex] === "\n" ? "<br>" : content[localIndex];
         localIndex++;
-        setTimeout(texttype, 100);
+        setTimeout(texttype, 50);
       } else {
         isTypingIntro = false;
         setTimeout(() => {
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ".about__terminal--box-content"
           ).style.marginLeft = "0px";
           terminalContent.innerHTML = content;
-        }, 1000);
+        }, 500);
       }
     }
   }

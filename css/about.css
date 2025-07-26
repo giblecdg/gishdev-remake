@@ -1,15 +1,17 @@
 .about {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     padding: 5rem 0rem;
+    gap: 5rem;
 }
 
 .about__terminal {
     color: #cdd9e5;
     animation: animate_about_section 1.1s forwards ease;
     opacity: 0;
+    animation-delay: 500ms;
 }
 
 .about__terminal--box {
@@ -63,7 +65,7 @@
     opacity: 0;
     transform: translateY(50px);
     animation: animate_about_section 1.2s forwards ease;
-    animation-delay: 300ms;
+    animation-delay: 800ms;
     opacity: 0;
 }
 
