@@ -14,6 +14,6 @@ This version is a full redesign of our previous site, aimed at presenting our sk
 - 📜 Privacy Policy & RODO compliance
 - ⚙️ Built with pure HTML, CSS, and JavaScript (no frameworks)
 
-  ```bash
-  git clone https://github.com/your-username/gishdev-remake.git
-  ```
+```bash
+git clone https://github.com/your-username/gishdev-remake.git
+```
