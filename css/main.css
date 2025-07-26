@@ -19,6 +19,7 @@ body {
     background-size: 1300% 1300%;
     animation: background-gradient-animation 12s ease-in-out infinite;
     height: 100vh;
+    background-color: #06000b;
 }
 
 html {
@@ -181,5 +182,22 @@ html {
     100% {
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+
+@keyframes send_message_animation {
+    0% {
+        top: -60px;
+        opacity: 0;
+    }
+
+    50% {
+        top: 50px;
+        opacity: 1;
+    }
+
+    100% {
+        top: -60px;
+        opacity: 0;
     }
 }

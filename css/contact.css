@@ -200,6 +200,28 @@
     padding: 5rem;
 }
 
+#send_message {
+    position: fixed;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    background: #b13cff;
+    border-radius: 20px;
+    font-weight: 700;
+    opacity: 0;
+    text-align: center;
+}
+
+#send_message.animated {
+    animation: send_message_animation 2s forwards;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin: 5px;
+}
+
 @media (max-width: 768px) {
     .contact__container--contact-us {
         flex-direction: column;

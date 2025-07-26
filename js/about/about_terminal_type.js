@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         terminalContent.innerHTML +=
           content[localIndex] === "\n" ? "<br>" : content[localIndex];
         localIndex++;
-        setTimeout(texttype, 50);
+        setTimeout(texttype, 0);
       } else {
         isTypingIntro = false;
         setTimeout(() => {
@@ -55,25 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
             ".about__terminal--box-content"
           ).style.marginLeft = "0px";
           terminalContent.innerHTML = content;
-        }, 500);
+        }, 0);
       }
     }
   }
-
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          texttype();
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
-
-  const terminalSection = document.querySelector(".about__terminal");
-  if (terminalSection) {
-    observer.observe(terminalSection);
-  }
+  texttype();
 });

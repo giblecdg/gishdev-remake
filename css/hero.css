@@ -145,11 +145,27 @@
 }
 
 @media (max-width: 1000px) {
-    .hero__animation {
-        display: none;
-    }
-
     .hero__content {
         width: 100%;
+        position: relative;
+    }
+
+    .hero__animation {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        z-index: -100;
+        overflow: hidden;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        opacity: 15%;
     }
 }
