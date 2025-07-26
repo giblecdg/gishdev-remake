@@ -1,4 +1,4 @@
-# GishDev — Modern Web Agency Website (Remake)
+# GishDev (Remake)
 
 Welcome to the official repository for the **GishDev** website remake — a fresh, professional, and modern landing page for our creative web development group.
 
