@@ -6,6 +6,7 @@ footer {
     background: var(--header-gradient);
     background-size: 300% 300%;
     text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 footer h2 {
