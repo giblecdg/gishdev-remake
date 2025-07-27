@@ -15,5 +15,5 @@ This version is a full redesign of our previous site, aimed at presenting our sk
 - ⚙️ Built with pure HTML, CSS, and JavaScript (no frameworks)
 
 ```bash
-git clone https://github.com/your-username/gishdev-remake.git
+git clone https://github.com/giblecdg/gishdev-remake.git
 ```
